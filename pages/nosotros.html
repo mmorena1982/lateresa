@@ -1,78 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Teresa - Nosotros</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Nosotros</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="../index.html"
-          ><img src="../medios/la-teresa-logo.png" alt="Logo La Teresa"
-        /></a>
-      </div>
-
-      <nav class="navbar">
-        <ul>
-          <a href="../index.html"><li>Inicio</li></a>
-          <a href="./menu.html"><li>Menú</li></a>
-          <a href="#"><li>Nosotros</li></a>
-          <a href="./reservas.html"><li>Reservas</li></a>
-          <a href="./contacto.html"><li>Contacto</li></a>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../medios/la-teresa-logo.png"
+              alt="Logo La Teresa"
+              height="50"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./menu.html">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reservas.html">Reservas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
+
     <main>
       <div class="banner"></div>
-      <section class="titulo-pagina">
+
+      <section class="nosotros-header">
         <h1>NOSOTROS</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-          praesentium
+          praesentium.
         </p>
       </section>
-      <section class="full-width-section clearfix">
-        <div class="half-width-image">
+
+      <section class="nosotros-grid">
+        <div class="imagen-nosotros">
           <img src="../medios/cocineros.webp" alt="Imagen nosotros" />
         </div>
-        <div class="texto">
-          <h2>Título del texto</h2>
+        <div class="texto-nosotros">
+          <h2>Quiénes somos</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-            possimus dolores sunt, earum quisquam reprehenderit inventore atque
-            maxime nostrum eum rerum consectetur sit, quibusdam deleniti eaque
-            provident! Odit, culpa ipsam. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eveniet saepe in laborum vitae, repudiandae
-            voluptas, voluptate provident quo deleniti similique quas nulla
-            expedita laudantium ipsa sequi. Voluptates eligendi dolores dolorem?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            maiores nam minima quisquam iure laborum, iusto aliquid provident
-            debitis vel iste id veritatis, tempora autem consequatur quos?
-            Quaerat, dolorem exercitationem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            possimus dolores sunt earum reprehenderit inventore atque maxime
+            nostrum eum rerum.
           </p>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer">
-        <div class="imagen-info">
-          <a href="https://www.instagram.com" target="_blank"
-            ><img src="../medios/instagram.png" alt="icono ubicacion"
-          /></a>
-        </div>
-        <div class="imagen-info">
-          <a href="mailto:lateresa@mail.com" target="_blank"
-            ><img src="../medios/email.png" alt="icono telefono"
-          /></a>
-        </div>
-        <div class="imagen-info">
-          <a href="https://www.facebook.com" target="_blank"
-            ><img src="../medios/facebook.png" alt="icono horario"
-          /></a>
-        </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../medios/instagram.png" alt="Instagram" width="32" />
+        </a>
+        <a href="mailto:lateresa@mail.com">
+          <img src="../medios/email.png" alt="Email" width="32" />
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="../medios/facebook.png" alt="Facebook" width="32" />
+        </a>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -1,33 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Teresa - Home</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Home</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="#"
-          ><img src="./medios/la-teresa-logo.png" alt="Logo La Teresa"
-        /></a>
-      </div>
-
-      <nav class="navbar">
-        <ul>
-          <a href="#"><li>Inicio</li></a>
-          <a href="./pages/menu.html"><li>Menú</li></a>
-          <a href="./pages/nosotros.html"><li>Nosotros</li></a>
-          <a href="./pages/reservas.html"><li>Reservas</li></a>
-          <a href="./pages/contacto.html"><li>Contacto</li></a>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./medios/la-teresa-logo.png"
+              alt="Logo La Teresa"
+              height="50"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/menu.html">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/reservas.html">Reservas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
+
     <main>
       <div class="banner"></div>
-      <section class="about">
-        <h1>Sabores auténticos en cada bocado</h1>
+
+      <section class="about container my-5">
+        <h1 class="text-center mb-4">Sabores auténticos en cada bocado</h1>
         <p>
           Nuestro restaurante, La Teresa, es un espacio donde la tradición y la
           innovación se encuentran para crear una experiencia gastronómica
@@ -38,48 +70,46 @@
           a disfrutar de un almuerzo en familia, una cena romántica o una
           reunión especial. Además, nuestro equipo de chefs y sommeliers está
           siempre dispuesto a recomendarte el mejor maridaje para cada plato.
-          Descubre Teresa y deja que la buena comida hable por sí sola
+          Descubre Teresa y deja que la buena comida hable por sí sola.
         </p>
       </section>
 
-      <section class="fila-imagenes">
-        <div class="imagen-info">
-          <img src="./medios/location.png" alt="icono ubicacion" />
-          <p>Ubicación <br />Siempre Viva 742</p>
-        </div>
-        <div class="imagen-info">
-          <img src="./medios/phone.png" alt="icono telefono" />
-          <p>Telefono: <br />11-4545-5454</p>
-        </div>
-        <div class="imagen-info">
-          <img src="./medios/clock.png" alt="icono horario" />
-          <p>
-            Lunes a domingos de<br />
-            12 a 23 hs
-          </p>
+      <section class="fila-imagenes container text-center py-5">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <img
+              src="./medios/location.png"
+              alt="icono ubicacion"
+              class="mb-2"
+            />
+            <p>Ubicación<br />Siempre Viva 742</p>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <img src="./medios/phone.png" alt="icono telefono" class="mb-2" />
+            <p>Teléfono:<br />11-4545-5454</p>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <img src="./medios/clock.png" alt="icono horario" class="mb-2" />
+            <p>Lunes a domingos de<br />12 a 23 hs</p>
+          </div>
         </div>
       </section>
-
-      <div></div>
     </main>
-    <footer>
-      <div class="footer">
-        <div class="imagen-info">
-          <a href="https://www.instagram.com" target="_blank"
-            ><img src="./medios/instagram.png" alt="icono ubicacion"
-          /></a>
-        </div>
-        <div class="imagen-info">
-          <a href="mailto:lateresa@mail.com"
-            ><img src="./medios/email.png" alt="icono telefono"
-          /></a>
-        </div>
-        <div class="imagen-info">
-          <a href="https://www.facebook.com"
-            ><img src="./medios/facebook.png" alt="icono horario"
-          /></a>
-        </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="./medios/instagram.png" alt="Instagram" width="32" />
+        </a>
+        <a href="mailto:lateresa@mail.com">
+          <img src="./medios/email.png" alt="Email" width="32" />
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="./medios/facebook.png" alt="Facebook" width="32" />
+        </a>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
