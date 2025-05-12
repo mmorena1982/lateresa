@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+html {
+  font-family: "Libre Baskerville", serif;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url(../medios/plato-home.avif);
+  opacity: 0.7;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "titulo-pagina full-width-section";
+  gap: 20px;
+  padding: 20px;
+}
+.grid-container .titulo-pagina {
+  grid-area: titulo-pagina;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 2rem;
+}
+.grid-container .full-width-section {
+  grid-area: full-width-section;
+}
+.grid-container .form div {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nosotros-header {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.nosotros-header p {
+  font-size: 1.5rem;
+}
+
+.nosotros-grid {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 4rem;
+}
+.nosotros-grid .imagen-nosotros img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.nosotros-grid .texto-nosotros {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.menu-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.menu-main .titulo-menu {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.menu-main .carousel-custom {
+  width: 80%;
+}
+.menu-main .carousel-custom .menu-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.menu-main .carousel-custom .menu-img .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.reservas {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .carousel-custom {
+    width: 95%;
+  }
+  .menu-img {
+    height: 300px;
+  }
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .texto-nosotros {
+    text-align: center;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-container .titulo-pagina {
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=sass_styles.css.map */

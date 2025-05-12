@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .carousel-custom {
+      width: 95%;
+    }
+  
+    .menu-img {
+      height: 300px;
+    }
+
+    .nosotros-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .texto-nosotros {
+      text-align: center;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .titulo-pagina{
+            align-items: center;
+        }
+    }
+  }

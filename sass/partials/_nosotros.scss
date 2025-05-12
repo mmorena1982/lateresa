@@ -1,0 +1,33 @@
+@use "./variables" as *;
+
+@mixin section-center {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.nosotros-header {
+    @include section-center();
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.nosotros-grid {
+    @include section-center();
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 4rem;
+    .imagen-nosotros {
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: $borderRadius;
+        }
+    }
+    .texto-nosotros {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}

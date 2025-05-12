@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sass_styles.css" />
     <title>Reservas</title>
 
     <link
@@ -15,7 +15,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
+          <a href="../index.html">
             <img
               src="../medios/la-teresa-logo.png"
               alt="Logo La Teresa"
@@ -60,32 +60,53 @@
       <div class="grid-container">
         <section class="titulo-pagina">
           <h1>RESERVAS</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-            praesentium
-          </p>
-          <div class="half-width-image">
+          <p>Realizá tu reserva</p>
+          <div>
             <img src="../medios/reservas.jpeg" alt="Imagen reservas" />
           </div>
         </section>
         <section class="full-width-section clearfix">
           <div class="reservas">
-            <h2>Reservá tu mesa</h2>
-            <form class="form" action="" method="post">
-              <div>
-                <label for="nombre">Nombre y apellido</label>
-                <input type="text" name="nombre" id="" />
-              </div>
-              <div>
-                <label for="">Teléfono</label>
-                <input type="email" name="" id="" />
-              </div>
-              <div>
-                <label for="">Día y horario</label>
-                <input type="tel" name="" id="" />
+            <h2>Dejanos tus datos y nos contactaremos a la brevedad</h2>
+            <form class="row g-12">
+              <div class="col-md-12">
+                <label for="nombre" class="form-label">Nombre y apellido</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  required
+                />
               </div>
 
-              <input type="button" value="Enviar" />
+              <div class="col-md-12">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  name="telefono"
+                  required
+                />
+              </div>
+
+              <div class="col-12">
+                <label for="comentarios" class="form-label"
+                  >Detalles de tu reserva</label
+                >
+                <textarea
+                  class="form-control"
+                  id="comentarios"
+                  name="comentarios"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
             </form>
           </div>
         </section>
